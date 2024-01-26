@@ -7,48 +7,55 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>Odin</header>
-    <h1>
-        This is not a real online service! You know you need something
-        like this in your life to help you realize your deepest dreams.
-        Sign up now to get started!
-
-        You know you want to.
-    </h1>
-
-    <form action="">
-        <div class="form-row">
-            <label for="first-name">First Name</label>
-            <input id="first-name" name="first-name" type="text" required>
-        </div>
-        <div class="form-row">
-            <label for="last-name">Last Name</label>
-            <input id="last-name" name="last-name" type="text" required>
+    <div class="flex-container">
+        <div id="flex-item-1">
+            <h1 id="logo">Odin</h1>
         </div>
 
-        <div class="form-row">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" required>
-        </div>
-        <div class="form-row">
-            <label for="phone-num">Phone Number</label>
-            <input id="phone-num" name="phone-num" type="tel" minlength="10" maxlength="11" required>
+        <div id="flex-item-2">
+            <h2>
+                This is not a real online service! You know you need something
+                like this in your life to help you realize your deepest dreams.
+                Sign up now to get started!
+            </h2>
+            <h2>You know you want to.</h2>
+
+            <form action="">
+                <div class="flex-container">
+                    <div class="form-item">
+                        <label for="first-name">First Name</label>
+                        <input id="first-name" name="first-name" type="text" required>
+                    </div>
+                    <div class="form-item">
+                        <label for="last-name">Last Name</label>
+                        <input id="last-name" name="last-name" type="text" required>
+                    </div>
+                </div>
+
+                <div class="flex-container">
+                    <div class="form-item">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" required>
+                    </div>
+                    <div class="form-item">
+                        <label for="phone-num">Phone Number</label>
+                        <input id="phone-num" name="phone-num" type="tel" minlength="10" maxlength="11" required>
+                    </div>
+                </div>
+
+                <div class="flex-container">
+                    <div class="form-item">
+                        <label for="password">Password</label>
+                        <input id="password" name="password" type="text" required>
+                    </div>
+                    <div class="form-item">
+                        <label for="pass-com">Confirm Password</label>
+                        <input id="pass-com" name="pass-com" type="text" required>
+                    </div>
+                </div>
+            </form>
         </div>
 
-        <div class="form-row">
-            <label for="password">
-                <span>Password</span>
-                <strong><span aria-label="required">*</span></strong>
-            </label>
-            <input id="password" name="password" type="text" required>
-        </div>
-        <div class="form-row">
-            <label for="pass-com">
-                <span>Confirm Password</span>
-                <strong><span aria-label="required">*</span></strong>
-            </label>
-            <input id="pass-com" name="pass-com" type="text" required>
-        </div>
-    </form>
+    </div>
 </body>
 </html>
