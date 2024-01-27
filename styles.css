@@ -1,3 +1,15 @@
+@font-face {
+    font-family: "Norse-Bold";
+    src: url("Norse-Bold.otf");
+}
+
+html, body, #page {
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
 .flex-container {
     display: flex;
 }
@@ -17,14 +29,19 @@
 
 #logo{
     color:whitesmoke;
-    font-size: 50px;
+    font-size: 40px;
+    font-family: "Norse-Bold", sans-serif;
 
     position: relative;
     top: 10rem;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 
-    padding: .5em;
     background: rgba(1, 1, 1, 0.45);
+}
+h1 {
+    padding-top: 20px;
 }
 
 form {
@@ -35,3 +52,4 @@ form {
 .form-item {
     margin: 20px;
 }
+
