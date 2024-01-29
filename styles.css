@@ -25,6 +25,8 @@ html, body, #page {
     background-image: url(halie-west-25xggax4bSA-unsplash.jpg);
     background-size: cover;
     background-attachment: cover;
+
+    color:whitesmoke;
 }
 
 #flex-item-2 {
@@ -33,7 +35,6 @@ html, body, #page {
 }
 
 #logo{
-    color:whitesmoke;
     font-size: 40px;
     font-family: "Norse-Bold", sans-serif;
 
@@ -44,6 +45,12 @@ html, body, #page {
     align-items: center;
 
     background: rgba(1, 1, 1, 0.45);
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    left: 7rem;
 }
 
 h1 {
@@ -58,10 +65,11 @@ h2{
 #main-text {
     padding-top: 5rem;
     padding-left: 50px;
+    padding-bottom: 20px;
     width: 43rem;
 }
 
-p > label {
+div > label {
     display: block;
 }
 
@@ -74,8 +82,11 @@ p > label {
 
     justify-content: space-around;
 
+    color: grey;
     font-weight: 300;
     font-style: normal;
+
+    box-shadow: 3px 3px 3px lightgrey;
 }
 
 
@@ -92,8 +103,23 @@ legend > h2 {
 }
 
 input {
+    padding: 5px 10px;
     width: 15rem;
-    height: 20px;
+    height: 15px;
+
+    border: 1px solid #E5E7EB;
+
+    border-radius: 5px;
+}
+
+input:focus:invalid {
+    border: 1px solid aquamarine;
+
+    box-shadow: 1px black;
+}
+
+.error > input:invalid:required {
+    border: 1px solid crimson;
 }
 
 button {
@@ -106,6 +132,8 @@ button {
     border: none;
 
     padding: 15px 40px;
+
+    box-shadow: 3px 3px 3px lightgrey;
 }
 
 #create-account {
@@ -115,4 +143,16 @@ button {
 
 #create-account > div {
     padding-top: 20px;
+}
+
+#log-in {
+    color: #596D48;
+    font-weight: bold;
+}
+
+.help { display: none; }
+.invalid .help { display: block; }
+.invalid label, .invalid input, .invalid .help {
+  color: red;
+  border-color: red;
 }
