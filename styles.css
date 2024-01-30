@@ -76,7 +76,6 @@ div > label {
 
 #form-box {
     padding-left: 20px;
-    padding-bottom: 20px;
 
     background-color: white;
 
@@ -150,9 +149,7 @@ button {
     font-weight: bold;
 }
 
-.help { display: none; }
-.invalid .help { display: block; }
 .invalid label, .invalid input, .invalid .help {
-  color: red;
-  border-color: red;
+    color: red;
+    border-color: red;
 }
